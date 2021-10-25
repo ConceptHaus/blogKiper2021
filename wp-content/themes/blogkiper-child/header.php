@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">       
 
         <!-- S T Y L E S - G E N E R A L -->
-        <meta name="theme-color" content="#712a81" />
+        <meta name="theme-color" content="#E53F28">
         <?php wp_head(); ?>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         
@@ -23,10 +23,26 @@
 
     <div class="overProgress fadeX"></div>
 
-    <div id="blockhh" class="head-block"></div>
-
     <!-- Header -->
     <header id="headerGeneral" class="g-header" data-blur-content>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-4 col-md-4">
+            
+          </div><!-- end.col-* -->
+          <div class="col-4 col-md-4">
+            <div class="brand">
+              <a href="/">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/img/kiper.svg" alt="Kiper">
+                <h1 class="site-title">Kiper</h1>
+              </a>
+            </div><!-- end.brand -->
+          </div><!-- end.col-* -->
+          <div class="col-4 col-md-4">
+
+          </div>
+        </div><!-- end.row -->
+      </div><!-- end.container -->
     </header>
     
     <!-- Main -->

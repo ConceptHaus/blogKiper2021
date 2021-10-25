@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
- * @package Equality_Child
+ * @package Blog_Kiper_Child
  */
 
 get_header();

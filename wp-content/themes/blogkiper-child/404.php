@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Creating_an_Error_404_Page
  *
- * @package peibo_Child
+ * @package Blog_Kiper_Child
  */
 
 get_header();
