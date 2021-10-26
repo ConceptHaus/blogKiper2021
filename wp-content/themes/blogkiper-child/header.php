@@ -19,16 +19,19 @@
             var siteURL = '<?php echo esc_url(site_url('')); ?>';
         </script>
     </head>
-    <body <?php body_class('is-preload'); ?> style="display: none;">
-
-    <div class="overProgress fadeX"></div>
+    <body <?php body_class('is-preload'); ?>>
 
     <!-- Header -->
     <header id="headerGeneral" class="g-header" data-blur-content>
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-4 col-md-4">
-            
+          <div class="d-none d-md-block col-md-4">
+            <div class="socialCt">
+              <ul class="socialCt__list">
+                <li class="socialCt__item"><a href="#" class="socialCt__link" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                <li class="socialCt__item"><a href="#" class="socialCt__link" target="_blank"><i class="fa fa-instagram"></i></a></li>
+              </ul><!-- end.socialCt__list -->
+            </div><!-- end.socialCt -->
           </div><!-- end.col-* -->
           <div class="col-4 col-md-4">
             <div class="brand">
@@ -38,8 +41,24 @@
               </a>
             </div><!-- end.brand -->
           </div><!-- end.col-* -->
-          <div class="col-4 col-md-4">
-
+          <div class="col-8 col-md-4">
+            <div class="boxSearch">
+              <form role="search" method="get" class="search-form" action="<?php echo home_url( '/' ); ?>">
+                <label>
+                  <span class="screen-reader-text"><?php echo _x( 'Search for:', 'label' ) ?></span>
+                  <input type="search" class="search-field"
+                    placeholder="<?php echo esc_attr_x( 'Buscar', 'placeholder' ) ?>"
+                    value="<?php echo get_search_query() ?>" name="s"
+                    autocomplete="off"
+                    title="<?php echo esc_attr_x( 'Search for:', 'label' ) ?>">
+                    <div class="iconSearch">
+                      <i class="fa fa-search"></i>
+                    </div>
+                </label>
+                <input type="submit" class="search-submit"
+                    value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>">
+              </form>
+            </div>
           </div>
         </div><!-- end.row -->
       </div><!-- end.container -->

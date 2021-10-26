@@ -1,13 +1,7 @@
 .g-footer {
-  width: 100%; height: auto; padding: 0; background-color: $rojo; padding: 25px 0; margin: 50px 0 0; z-index: 3; position: relative; @include box-sizing(border-box);
+  width: 100%; height: auto; padding: 0; background-color: $white; padding: 30px 0 60px; margin: 0; z-index: 3; position: relative; @include box-sizing(border-box); border-top: 1px solid rgba($gris, 0.45);
   &__box {
     width: 100%; height: auto; margin: 0; padding: 0; @include box-sizing(border-box);
-    & .followfoot {
-      padding: 0; margin: 0 0 10px; text-align: center; color: $white; font-family: 'Gotham-Light'; font-weight: 400; line-height: 1; font-size: rem(13px);
-      @media all and (min-width: 768px) {
-        text-align: left;
-      }
-    }
     &--brand {
       text-align: center; margin-bottom: 16px;
       & .linklogo {
@@ -16,14 +10,11 @@
           display: block; width: 100%; max-width: 127px; height: auto; padding: 0; margin: 0 auto; object-fit: contain; font-family: 'object-fit: contain';
         }
         & .site-title-footer {
-          font-size: 0; text-indent: -9999px; color: $white; opacity: 0; margin: 0; padding: 0;
+          font-size: 0; text-indent: -9999px; color: $gris; opacity: 0; margin: 0; padding: 0;
         }
       }
       & .desclink {
-        padding: 0; margin: 0; text-align: center; color: $white; font-family: 'Gotham-Light'; font-weight: 400; line-height: 1;
-        & a {
-          @include fluid-type(10px, 13px, 320px, 1200px); color: $white; text-decoration: none;
-        }
+        padding: 0; margin: 0; text-align: center; color: $gris; font-family: 'Gotham-Light'; font-weight: 400; line-height: 1; @include fluid-type(10px, 13px, 320px, 1200px);
       }
       @media all and (min-width: 768px) {
         margin-bottom: 0;
@@ -32,61 +23,30 @@
         }
       }
     }
-    &--socfoot {
-      list-style-type: none; @include display(flex); @include justify-content(center); @include flex-direction(row); @include align-items(center); margin-bottom: 15px;
-      & li {
-        list-style-type: none; padding: 0; margin: 0 10px 0 0;
-        & a {
-          & img {
-            display: inline-block; margin: 0; padding: 0;
-          }
-        }
-        &:last-child {
-          margin: 0;
-        }
-      }
-      @media all and (min-width: 768px) {
-        @include justify-content(flex-start);
-      }
-    }
     &--items {
-      list-style-type: none; @include display(flex); @include justify-content(center); @include flex-direction(column);
+      list-style-type: none; @include display(flex); @include justify-content(center); @include flex-direction(column); margin-bottom: 30px;
       & li {
-        list-style-type: none; padding: 0; margin: 0 0 5px;
+        list-style-type: none; padding: 0; margin: 0 0 10px;
         & a {
-          padding: 0; margin: 0; text-align: center; color: $white; font-family: 'Gotham-Light'; font-weight: 400; line-height: 1; text-decoration: none; display: block; @include fluid-type(10px, 13px, 320px, 1200px);
+          padding: 0; margin: 0; text-align: center; color: $gris; font-family: 'GothamMedium'; font-weight: 700; line-height: 1; text-decoration: none; display: block; @include fluid-type(10px, 13px, 320px, 1200px); @include transition(all 300ms ease);
+          &:hover {
+            color: $rojo;
+          }
         }
         &:last-child {
           margin: 0;
         }
       }
       @media all and (min-width: 768px) {
-        @include justify-content(flex-start);
+        @include flex-direction(row);
         & li {
-          & a {
-            text-align: left;
-          }
+          margin: 0 100px 0 0;
         }
       }
-    }
-    &--info {
-      list-style-type: none; @include display(flex); @include justify-content(center); @include flex-direction(column); margin-bottom: 16px;
-      & li {
-        list-style-type: none; padding: 0; margin: 0 0 8px;
-        & a {
-          padding: 0; margin: 0; text-align: center; color: $white; font-family: 'Gotham-Light'; font-weight: 400; line-height: 1; text-decoration: none; display: block; @include fluid-type(10px, 13px, 320px, 1200px);
-        }
-        &:last-child {
-          margin: 0;
-        }
-      }
-      @media all and (min-width: 768px) {
-        @include justify-content(flex-end); margin-bottom: 0;
+      @media all and (min-width: 992px) {
+        @include flex-direction(row);
         & li {
-          margin: 0 0 20px;
-          & a {
-            text-align: right;
-          }
+          margin: 0 150px 0 0;
         }
       }
     }

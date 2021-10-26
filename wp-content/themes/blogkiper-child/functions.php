@@ -30,8 +30,8 @@ function Blog_Kiper_child_setup() {
   add_theme_support( 'post-thumbnails' );
   if ( function_exists( 'add_image_size' ) ) {
     add_image_size( 'homepage-twitter', 280, 150, true );
-    add_image_size( 'homepage-facebook', 470, 246, true );
-    add_image_size( 'img-slider', 1440, 600, false );
+    add_image_size( 'blog-biog', 470, 246, true );
+    add_image_size( 'blog-small', 170, 130, false );
   }
   //Registro de Menús
   register_nav_menus( array(
@@ -59,6 +59,8 @@ function Blog_Kiper_head() {
 	wp_enqueue_style('bootstrap',  get_stylesheet_directory_uri() . '/assets/bootstrap/css/bootstrap.min.css', array(), $versionFiles);
 	wp_enqueue_style('style-min',  get_stylesheet_directory_uri() . '/assets/css/stylemain.min.css', array(), $versionFiles);
 	wp_enqueue_style('stylecompress-min',  get_stylesheet_directory_uri() . '/assets/css/stylehome.css', array(), $versionFiles);
+	wp_enqueue_style('font-min',  get_stylesheet_directory_uri() . '/assets/font/font.css', array(), $versionFiles);
+	wp_enqueue_style('stiloword-min',  get_stylesheet_directory_uri() . '/assets/css/style.css', array(), $versionFiles);
   wp_enqueue_style('animate',  get_stylesheet_directory_uri() . '/assets/css/animate.css', array(), $versionFiles);
   // wp_enqueue_style('slick',  get_stylesheet_directory_uri() . '/assets/css/slick.css', array(), $versionFiles);
 

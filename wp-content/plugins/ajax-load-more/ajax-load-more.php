@@ -7,15 +7,15 @@
  * Author: Darren Cooney
  * Twitter: @KaptonKaos
  * Author URI: https://connekthq.com
- * Version: 5.5.0
+ * Version: 5.5.0.1
  * License: GPL
  * Copyright: Darren Cooney & Connekt Media
  *
  * @package AjaxLoadMore
  */
 
-define( 'ALM_VERSION', '5.5.0' );
-define( 'ALM_RELEASE', 'July 8, 2021' );
+define( 'ALM_VERSION', '5.5.0.1' );
+define( 'ALM_RELEASE', 'September 15, 2021' );
 define( 'ALM_STORE_URL', 'https://connekthq.com' );
 
 /**
@@ -627,7 +627,7 @@ if ( ! class_exists( 'AjaxLoadMore' ) ) :
 					 // ALM Loop
 					while ( $alm_query->have_posts() ) :
 						$alm_query->the_post();
-						
+
 						$alm_loop_count++;
 						$alm_current++; // Current item in loop
 						$alm_page = $alm_page_count; // Get page number

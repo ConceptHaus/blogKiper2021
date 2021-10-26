@@ -1,9 +1,9 @@
  @font-face {
       font-family: "GothamMedium";
-      src: url("/font/GothamMedium.ttf");
+      src: url("GothamMedium.ttf");
 }
 
  @font-face {
       font-family: "Gotham-Light";
-      src: url("/font/Gotham-Light.otf");
+      src: url("Gotham-Light.otf");
 }

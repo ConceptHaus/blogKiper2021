@@ -20,19 +20,20 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-//define( 'DB_NAME', 'db_blogkiper' );
-define( 'DB_NAME', 'blogkiper2021' );
+define( 'DB_NAME', 'db_blogkiper' );
+// define( 'DB_NAME', 'blogkiper2021' );
 
 /** MySQL database username */
-//define( 'DB_USER', 'root' );
-define( 'DB_USER', 'forge' );
+define( 'DB_USER', 'root' );
+// define( 'DB_USER', 'forge' );
 
 /** MySQL database password */
-//define( 'DB_PASSWORD', '' );
-define( 'DB_PASSWORD', 'ipJlBz5ays4ho80oULXY' );
+define( 'DB_PASSWORD', '' );
+// define( 'DB_PASSWORD', 'ipJlBz5ays4ho80oULXY' );
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );
+// define( 'DB_HOST', 'blogkiper2021.concepthaus.dev' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );

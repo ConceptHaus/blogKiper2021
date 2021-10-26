@@ -9,27 +9,25 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' ); ?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php
-			blogkiper_posted_on();
-			blogkiper_posted_by();
-			?>
-		</div><!-- .entry-meta -->
-		<?php endif; ?>
-	</header><!-- .entry-header -->
-
-	<?php blogkiper_post_thumbnail(); ?>
-
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
-
-	<footer class="entry-footer">
-		<?php blogkiper_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->
+										<div class="col-12 col-md-6 col-lg-4">
+                      <div class="boxBlog">
+                        <div class="boxBlog__image">
+                        <?php if(has_post_thumbnail()) : ?>
+                          <?php echo the_post_thumbnail(); ?>
+                        <?php else: ?>
+                          <img src="<?php echo get_stylesheet_directory_uri(''); ?>/assets/img/imgprueba/evaluacion_icono-01.svg" alt="<?php the_title(); ?>">
+                        <?php endif; ?>
+                          <a href="<?php the_permalink(); ?>" class="boxBlog__link">Leer más</a>
+                        </div>
+                        <div class="boxBlog__desc">
+                          <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+                          <div class="boxBlog__divider"></div>
+                          <div class="rte">
+                            <?php the_excerpt(); ?>
+                          </div>
+                          <div class="boxBlog__date">
+                            <p class="fecha"><i class="fa fa-calendar"></i> <?php the_time( 'F j, y' ); ?></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div><!-- #post-<?php the_ID(); ?> -->
