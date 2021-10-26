@@ -78,6 +78,9 @@ get_header();
                     <hr>
                     <div class="popularesCt__news">
                       <h2>Únete a nuestro newsletter</h2>
+											<div class="formNews">
+                        <?php echo do_shortcode('[contact-form-7 id="34" title="Newsletter form"]'); ?>
+                      </div>
                     </div>
                   </div><!-- end.popularesCt -->
 									

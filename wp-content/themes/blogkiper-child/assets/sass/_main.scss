@@ -310,6 +310,28 @@ form {
       }
     }
   }
+  &--bigimg {
+    & .boxBlog__image {
+      height: 300px;
+    }
+    & .boxBlog__desc {
+      & .rte {
+        & p {
+          margin: 0 0 15px;
+        }
+      }
+    }
+    @media all and (min-width: 768px) {
+      & .boxBlog__image {
+        height: 350px;
+      }
+    }
+    @media all and (min-width: 992px) {
+      & .boxBlog__image {
+        height: 400px;
+      }
+    }
+  }
 }
 .popularesCt {
   width: 100%; height: auto; padding: 0; margin: 0; @include box-sizing(border-box); position: relative;
@@ -341,4 +363,22 @@ form {
 }
 .page-title {
   @include fluid-type(20px, 32px, 320px, 1200px); margin: 0; padding: 0; line-height: 1; font-family: 'GothamMedium'; font-weight: 700; text-align: left; color: $gris;
+}
+.formNews {
+  width: 100%; height: auto; padding: 0; margin: 20px 0; position: relative; overflow: hidden; text-align: center;
+  & form {
+    position: relative; padding: 0; margin: 0;
+  }
+  & .inputNews {
+    width: 100%; border: 0; outline: 0; padding: 10px 17px 10px; border: 1px solid $gris!important; box-shadow: none; background-color: $white!important; border-radius: 8px!important; @include fluid-type(13px, 16px, 320px, 1200px);
+  }
+  & .inputBtn {
+    width: auto; height: 40px; padding: 0 30px; margin: 0; text-transform: uppercase; text-align: center; color: $white; display: inline-block; border: 1px solid $rojo; @include box-sizing(border-box); font-size: rem(16px); cursor: pointer; position: relative; overflow: hidden; border-radius: 6px; background-color: $rojo !important; @include transition(all 0.23s); box-shadow: 0 0 5px rgba($black, 0.25);
+    &:hover {
+        background-color: $ama!important; color: $white; border: 1px solid $ama;
+    }
+  }
+  & .wpcf7-spinner {
+    @include position(absolute, null null 5px 50%); @include transform(translateX(-50%)); margin: 0;
+  }
 }
