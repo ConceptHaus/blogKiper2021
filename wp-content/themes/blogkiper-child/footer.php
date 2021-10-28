@@ -8,11 +8,17 @@
 
               <div class="col-12">
                 <div class="g-footer__box">
-                  <ul class="g-footer__box g-footer__box--items">
-                    <li><a href="/terminos-de-uso">Sobre Kiper</a></li>
-                    <li><a href="/aviso-privacidad">Contacto</a></li>
-                    <li><a href="/aviso-privacidad">Newsletter</a></li>
-                  </ul><!-- end.g-footer__box--items -->
+              <?php
+                wp_nav_menu( array(
+                  'items_wrap'     => '<ul class="g-footer__box g-footer__box--items">%3$s</ul>',
+                  'theme_location' => 'menu-footer',
+                  'container'       => '',
+                  'container_class' => '',
+                  'container_id'    => '',
+                  'before'          => '',
+                  'after'           => '',
+                ));
+              ?>
                 </div><!-- end.g-footer__box -->
               </div><!-- end.col-* -->
               <div class="col-12">

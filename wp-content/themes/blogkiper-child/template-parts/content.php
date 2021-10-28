@@ -20,7 +20,7 @@
 											<?php endif; ?>
 												<div class="boxBlog__tags">
 													<nav class="tagger">
-														<a href=""></a>
+														<?php the_tags('', '', ''); ?>
 													</nav><!-- end.tagger -->
 												</div><!-- end.boxBlog__tags -->
                         <div class="boxBlog__desc">

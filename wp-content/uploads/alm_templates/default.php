@@ -1,5 +1,5 @@
                     <div class="col-12 col-md-6 col-lg-4">
-                      <div class="boxBlog">
+                      <div class="boxBlog boxBlog--ajax">
                         <div class="boxBlog__image">
                         <?php if(has_post_thumbnail()) : ?>
                           <?php echo the_post_thumbnail(); ?>
@@ -10,7 +10,7 @@
                         </div>
                         <div class="boxBlog__desc">
                           <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                          <div class="boxBlog__divider"></div>
+                          <!-- <div class="boxBlog__divider"></div> -->
                           <div class="rte">
                             <?php the_excerpt(); ?>
                           </div>

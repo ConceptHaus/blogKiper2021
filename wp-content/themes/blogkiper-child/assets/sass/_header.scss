@@ -35,9 +35,9 @@
   & form {
     width: 100%; height: auto; padding: 0; margin: 0;
     & label {
-      margin: 0; padding: 0; position: relative;
+      margin: 0; padding: 0; position: relative; border: 1px solid $black; border-radius: 6px; @include box-sizing(border-box); overflow: hidden;
       & input[type="search"] {
-        padding-left: 40px; @include box-sizing(border-box);
+        padding-left: 40px; @include box-sizing(border-box); background-color: transparent;
       }
     }
     & .iconSearch {

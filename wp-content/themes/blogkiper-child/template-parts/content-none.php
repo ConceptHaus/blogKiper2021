@@ -9,10 +9,10 @@
 
 ?>
 
-<section class="no-results not-found">
-	<header class="page-header">
-		<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'blogkiper' ); ?></h1>
-	</header><!-- .page-header -->
+<div class="no-results not-found">
+	<div class="page-header">
+		<h1 class="page-title text-center"><?php esc_html_e( 'Nothing Found', 'blogkiper' ); ?></h1>
+	</div><!-- .page-header -->
 
 	<div class="page-content">
 		<?php
@@ -48,4 +48,4 @@
 		endif;
 		?>
 	</div><!-- .page-content -->
-</section><!-- .no-results -->
+</div><!-- .no-results -->
