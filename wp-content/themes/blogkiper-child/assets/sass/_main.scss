@@ -301,6 +301,20 @@ form {
     }
     & .rte {
       width: 100%; height: auto; padding: 0; margin: 0 0 15px; text-align: left; font-family: 'Gotham-Light'; font-weight: 400;
+      & h1, & h2, & h3, & h4, & h5, & h6 {
+        font-family: 'GothamMedium'; font-weight: 600;
+        & strong {
+          font-weight: 700;
+        }
+      }
+      & ul {
+        & li { 
+          @include fluid-type(12px, 15px, 320px, 1200px); line-height: 1.2;
+          & a {
+            @include fluid-type(12px, 15px, 320px, 1200px); line-height: 1.2; text-decoration: none; font-family: 'GothamMedium'; font-weight: 500;
+          }
+        }
+      }
       & p {
         margin: 0; padding: 0; @include fluid-type(12px, 15px, 320px, 1200px); line-height: 1.2;
       }
