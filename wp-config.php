@@ -27,7 +27,7 @@ define( 'DB_NAME', 'blogkiper2021' );
 // define( 'DB_USER', 'root' );
 define( 'DB_USER', 'forge' );
 
-/** MySQL database password */
+/** MySQL database password */ 
 // define( 'DB_PASSWORD', '' );
 define( 'DB_PASSWORD', 'ipJlBz5ays4ho80oULXY' );
 
